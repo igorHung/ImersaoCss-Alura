@@ -6,7 +6,7 @@
 
 
 body{
-	background-image: url('../img/fundo.jpg');
+	background-image: url('../img/af3c090f6a81b6a526e3ce48e018a9c7.png');
 	background-size: auto 100vh;
 	font-family: Arial;
 	height: 100vh;
@@ -32,12 +32,13 @@ body{
 
 
 header{
-	height: 100vh;
+	height: 90vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .site-title{
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 3em;
 	color: whitesmoke;
 	text-align: center
@@ -47,6 +48,14 @@ header{
 	color: whitesmoke;
 	text-align: center;
 	font-style: italic;
+}
+
+
+.introducao-perfil{
+	margin: 0 30px;
+	border: 4px solid white;
+	border-radius: 20px;
+	padding: 40px;
 }
 
 
@@ -74,16 +83,67 @@ header{
 }
 
 a{
-	color: teal;
+	color: black;
+	font-weight: bolder;
 	text-decoration: none;
 }
 
 a:hover{
-	text-decoration: underline;
+	color: blue;
 }
 
 
+.portfolio{
+	background-color: whitesmoke;
+	padding: 2em;
+	height: 100vh;
+
+}
+.portfolio h2 {
+		color: rgb(0, 0, 0);
+		margin-bottom: 2em;
+		font-size: 2em;
+		text-align: center;
+ }
+
+ .portfolio h2:after {
+	content: "";
+	display: block;
+	width: 130px;
+	height: 4px;
+	background: rgb(7, 16, 100);
+	margin: 6px auto;
+
+ }
+
+
+.portfolio .grid{
+	display: grid;
+	gap: 2em;
+}
+
+.portfolio figure{
+	text-align: center;
+}
+
+@media (min-width: 560px) {
+	.portfolio .grid{
+		grid-template-columns: 240px 240px;
+	}
+}
+
+@media (min-width: 880px) {
+	.portfolio .grid{
+		grid-template-columns: repeat(3, 240px);
+		align-content: center;
+		justify-content: center;
+		height: calc(100vh - 8em - 48px);
+	}
+}
+
 .img-portfolio{
-	width: 180px;
+
 	height: 180px;
+	widht: 240px;
+	object-fit: cover;
 }
