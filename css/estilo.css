@@ -33,6 +33,7 @@ body{
 
 header{
 	height: 90vh;
+	width: 100vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -96,7 +97,6 @@ a:hover{
 .portfolio{
 	background-color: whitesmoke;
 	padding: 2em;
-	height: 100vh;
 
 }
 .portfolio h2 {
